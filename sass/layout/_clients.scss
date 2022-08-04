@@ -4,9 +4,13 @@
 
 .client-list .item {
     display: flex;
-
     width: 170px;
     height: 92px;
+
+    & + .item {
+        margin-left: 30px;
+    }
+        
 }
 
 .icon-client {
@@ -29,8 +33,4 @@
         border-color: var(--accent-color);
         fill: var(--accent-color);
     }
-}
-
-.client-list .item + .item {
-    margin-left: 30px;
 }
