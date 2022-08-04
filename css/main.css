@@ -96,24 +96,12 @@
   transition: box-shadow 250ms var(--time-function), fill 250ms var(--time-function), -webkit-box-shadow 250ms var(--time-function);
   fill: var(--logo-black-color);
 }
-
-.close-btn:hover,
-.close-btn:focus {
+.close-btn:hover, .close-btn:focus {
   -webkit-box-shadow: var(--close-btn-box-shadow);
           box-shadow: var(--close-btn-box-shadow);
   fill: var(--accent-color);
 }
 
-/*
-.close-icon {
-    fill: var(--logo-black-color);
-    transition: fill 250ms var(--time-function);
-}*/
-/*
-.close-icon:hover,
-.close-icon:focus {
-    fill: var(--accent-color);
-}*/
 /*-------------------------------------------*/
 .modal-title {
   font-weight: 700;
@@ -151,6 +139,10 @@
 .input-wrap {
   position: relative;
 }
+.input-wrap:hover, .input-wrap:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
 
 .form-input {
   width: 100%;
@@ -161,19 +153,17 @@
   -webkit-transition: fill 250ms var(--time-function), border-color 250ms var(--time-function);
   transition: fill 250ms var(--time-function), border-color 250ms var(--time-function);
 }
-
-.input-wrap:hover,
-.input-wrap:focus {
-  border-color: var(--accent-color);
+.form-input:hover, .form-input:focus {
   fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
+/*
 .form-input:hover + .form-icon,
-.form-input:focus + .form-icon {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
-}
-
+.form-input:focus + .form-icon{
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+}*/
 .form-icon {
   position: absolute;
   left: 12px;
@@ -202,55 +192,44 @@
   -webkit-transition: border 250ms var(--time-function);
   transition: border 250ms var(--time-function);
 }
-
 .form-area::-webkit-input-placeholder {
   -webkit-transition: font-size 250ms var(--time-function);
   transition: font-size 250ms var(--time-function);
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form-area::-moz-placeholder {
   -moz-transition: font-size 250ms var(--time-function);
   transition: font-size 250ms var(--time-function);
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form-area:-ms-input-placeholder {
   -ms-transition: font-size 250ms var(--time-function);
   transition: font-size 250ms var(--time-function);
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form-area::-ms-input-placeholder {
   -ms-transition: font-size 250ms var(--time-function);
   transition: font-size 250ms var(--time-function);
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form-area::placeholder {
   -webkit-transition: font-size 250ms var(--time-function);
   transition: font-size 250ms var(--time-function);
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form-area:hover::-webkit-input-placeholder, .form-area:focus::-webkit-input-placeholder {
   font-size: 14px;
 }
-
 .form-area:hover::-moz-placeholder, .form-area:focus::-moz-placeholder {
   font-size: 14px;
 }
-
 .form-area:hover:-ms-input-placeholder, .form-area:focus:-ms-input-placeholder {
   font-size: 14px;
 }
-
 .form-area:hover::-ms-input-placeholder, .form-area:focus::-ms-input-placeholder {
   font-size: 14px;
 }
-
-.form-area:hover::placeholder,
-.form-area:focus::placeholder {
+.form-area:hover::placeholder, .form-area:focus::placeholder {
   font-size: 14px;
 }
 
@@ -277,8 +256,6 @@
 }
 
 .check-icon {
-  /*width: 16px;
-  height: 15px;*/
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
   fill: transparent;
@@ -332,9 +309,7 @@
   transition: box-shadow 250ms var(--time-function), -webkit-box-shadow 250ms var(--time-function);
   cursor: pointer;
 }
-
-.check-button:hover,
-.check-button:focus {
+.check-button:hover, .check-button:focus {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -493,9 +468,7 @@
   -webkit-transition: background-color 250ms var(--time-function);
   transition: background-color 250ms var(--time-function);
 }
-
-.socicon:hover,
-.socicon:focus {
+.socicon:hover, .socicon:focus {
   background-color: var(--accent-color);
 }
 
@@ -528,9 +501,7 @@
   -webkit-transition: border-color 250ms var(--time-function);
   transition: border-color 250ms var(--time-function);
 }
-
-.email-inputt:hover,
-.email-input:focus {
+.email-input:hover, .email-input:focus {
   border-color: var(--accent-color);
 }
 
@@ -1015,9 +986,7 @@ img {
   -webkit-transition: background-color 250ms var(--time-function);
   transition: background-color 250ms var(--time-function);
 }
-
-.button.primary:hover,
-.button.primary:focus {
+.button.primary:hover, .button.primary:focus {
   background-color: var(--button-color);
 }
 
@@ -1031,9 +1000,7 @@ img {
   transition: background-color 250ms var(--time-function), box-shadow var(--button-secondary-box-shadow), color 250ms var(--time-function);
   transition: background-color 250ms var(--time-function), box-shadow var(--button-secondary-box-shadow), color 250ms var(--time-function), -webkit-box-shadow var(--button-secondary-box-shadow);
 }
-
-.button.secondary:hover,
-.button.secondary:focus {
+.button.secondary:hover, .button.secondary:focus {
   color: var(--primary-button-color);
   background-color: var(--accent-color);
   -webkit-box-shadow: var(--button-secondary-box-shadow);

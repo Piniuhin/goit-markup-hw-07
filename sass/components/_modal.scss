@@ -21,7 +21,6 @@
     }
 }
 
-
 .modal {
     position: absolute;
     padding: 40px;
@@ -62,25 +61,13 @@
 
     fill: var(--logo-black-color);
 
+    &:hover,
+    &:focus {
+        box-shadow: var(--close-btn-box-shadow);
+        fill: var(--accent-color);
+    }
 }
 
-.close-btn:hover,
-.close-btn:focus {
-    box-shadow: var(--close-btn-box-shadow);
-    fill: var(--accent-color);
-}
-
-/*
-.close-icon {
-    fill: var(--logo-black-color);
-    transition: fill 250ms var(--time-function);
-}*/
-
-/*
-.close-icon:hover,
-.close-icon:focus {
-    fill: var(--accent-color);
-}*/
 
 /*-------------------------------------------*/
 
@@ -116,6 +103,11 @@
 
 .input-wrap {
     position: relative;
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        fill: var(--accent-color);
+    }
 }
 .form-input {
     width: 100%;
@@ -127,19 +119,20 @@
     
     transition: fill 250ms var(--time-function),
     border-color 250ms var(--time-function);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        border-color: var(--accent-color);
+    }
 }
 
-.input-wrap:hover,
-.input-wrap:focus {
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
-}
-
+/*
 .form-input:hover + .form-icon,
 .form-input:focus + .form-icon{
     fill: var(--accent-color);
     border-color: var(--accent-color);
-}
+}*/
 
 .form-icon{
     position: absolute;
@@ -148,6 +141,7 @@
     
     transform: translatey(-50%);
     transition:fill 250ms var(--time-function);
+
 } 
 /*
 .form-icon:hover,
@@ -169,15 +163,17 @@
     border-radius: 4px;
     
     transition: border 250ms var(--time-function);
+
+    &::placeholder {
+        transition: font-size 250ms var(--time-function);
+        color: rgba(117, 117, 117, 0.5);
+    }
+    &:hover::placeholder,
+    &:focus::placeholder {
+        font-size: 14px;
+    }
 }
-.form-area::placeholder{
-    transition: font-size 250ms var(--time-function);
-    color: rgba(117, 117, 117, 0.5);
-}
-.form-area:hover::placeholder,
-.form-area:focus::placeholder{
-    font-size: 14px;
-}
+
 .form-comment {
     display: flex;
     flex-direction: column;
@@ -191,8 +187,6 @@
     margin-bottom: 30px;
 }
 .check-icon{
-    /*width: 16px;
-    height: 15px;*/
     border: 2px solid var(--title-text-color);
     border-radius: 2px;
 
@@ -246,10 +240,9 @@
 
     transition: box-shadow 250ms var(--time-function);
     cursor: pointer;
-}
 
-.check-button:hover,
-.check-button:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
-  
+    &:hover,
+    &:focus {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
+    }
 }
