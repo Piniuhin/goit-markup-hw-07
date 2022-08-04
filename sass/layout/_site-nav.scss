@@ -18,12 +18,12 @@
     color: var(--title-text-color);
     
     transition: color 250ms var(--time-function);
-}
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-    color: var(--accent-color);
-} 
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
 
 .auth-nav {
     display: flex;
@@ -56,12 +56,12 @@
 
     transition: fill var(--primary-text-color),
     color 250ms var(--time-function);
-}
 
-.icon-link:hover,
-.icon-link:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        fill: var(--accent-color);
+    }
 }
 
 .site-nav .link.current {

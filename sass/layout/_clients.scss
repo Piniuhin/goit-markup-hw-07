@@ -24,12 +24,11 @@
     transition: fill 250ms var(--time-function), 
     border-color 250ms var(--time-function);
     
-}
-
-.icon-client:hover,
-.icon-client:focus {
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        fill: var(--accent-color);
+    }
 }
 
 .client-list .item + .item {
