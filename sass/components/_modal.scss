@@ -14,12 +14,14 @@
     box-shadow: var(--backdrop-box-shadow);
 
     transition: opacity 250ms var(--time-function),transform 250ms var(--time-function),visibility 250ms var(--time-function);
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
-.backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-}
+
 .modal {
     position: absolute;
     padding: 40px;
@@ -59,6 +61,7 @@
     fill 250ms var(--time-function) ;
 
     fill: var(--logo-black-color);
+
 }
 
 .close-btn:hover,
@@ -66,6 +69,7 @@
     box-shadow: var(--close-btn-box-shadow);
     fill: var(--accent-color);
 }
+
 /*
 .close-icon {
     fill: var(--logo-black-color);
