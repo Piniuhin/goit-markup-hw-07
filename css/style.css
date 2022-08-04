@@ -862,7 +862,7 @@ img {
     text-decoration: none;
     color: var(--address-text-color);
 }
-.address-nav .item+ .item {
+.address_nav .address_item+ .address_item {
     margin-top: 9px;
 }
 .footer .container {
