@@ -1,3 +1,5 @@
+/*--Address--*/
+
 .address {
     text-decoration: none;
     font-style: normal;
@@ -9,9 +11,10 @@
     text-decoration: none;
     color: var(--address-text-color);
 }
-.address-nav .item+ .item {
+.address_nav .address_item+ .address_item {
     margin-top: 9px;
 }
+
 .footer .container {
     display: flex;
     align-items: baseline;
@@ -85,6 +88,7 @@
     width: 358px;
     height: 50px;
     padding-left: 15px;
+    margin-right: 12px;
 
     color: var(--address-text-color);
     border: 1px solid var(--email-input-border-color);
@@ -99,15 +103,13 @@
     border-color: var(--accent-color);
 }
 
-.subscribe-button{
+.subscribe_button{
     
     display: flex;
     align-items: flex-end;
   
-
     width: 200px;
     height: 50px;
-    margin-left: 12px;
     padding: 10px 28px;
     font-family: inherit;
 
@@ -128,7 +130,7 @@
     cursor: pointer;
 }
 
-.subscribe-icon {
+.subscribe_icon {
     margin-left: 10px;
     fill: var(--primary-white-color);
 }
